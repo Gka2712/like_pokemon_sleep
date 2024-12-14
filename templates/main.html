@@ -8,20 +8,27 @@
     </head>
     <body>
         <h2>pokemon sleepヘようこそ</h2>
+        {{message}}<br>
         カビゴン評価:今は{{rankpos.ranknow}}です<br>
-        今のカビゴンのパワーはです。
-        <progress value="0" max="100"></progress>
+        食材:{{randnutnum.num}}
+        今のカビゴンのパワーは{{cavigonid.power}}です。
+        <progress value="{{(cavigonid.power/rankpos.minpower)*100}}" max="100"></progress>
         <p></p>
-        ポケモン1<button>木の実を渡す</button>
+        ポケモン1 <button class="btn btn-primary" onclick="location.href='/collect/1'">木の実を渡す</button>
         <p></p>
-        ポケモン2<button>木の実を渡す</button>
+        ポケモン2 <button class="btn btn-primary" onclick="location.href='/collect/2'">木の実を渡す</button>
         <p></p>
-        ポケモン3<button>木の実を渡す</button>
+        ポケモン3 <button class="btn btn-primary" onclick="location.href='/collect/3'">木の実を渡す</button>
         <p></p>
-        ポケモン4<button>木の実を渡す</button>
+        ポケモン4 <button class="btn btn-primary" onclick="location.href='/collect/4'">木の実を渡す</button>
         <p></p>
-        ポケモン5<button>木の実を渡す</button>
+        ポケモン5 <button class="btn btn-primary" onclick="location.href='/collect/5'">木の実を渡す</button>
         <p></p>
-        <button onclick="location.href='/sleep'">眠る</button>
+        <button class="btn btn-primary" onclick="location.href='/sleep'">眠る</button>
+        <p></p>
+        <button class="btn btn-primary" onclick="location.href='/cooking'">食事する</button>
+        <button class="btn btn-primary" onclick="location.href='/cookquantity'">材料の容量を増やす</button>
+        <p></p>
+        <button class="btn btn-primary" onclick="location.href='/reset'">リセット</button>
     </body>
 </html>
